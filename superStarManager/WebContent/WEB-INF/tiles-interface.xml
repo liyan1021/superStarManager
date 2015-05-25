@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions >
+	<definition name="interface.start.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/start_list.jsp"/>
+    </definition>
+	<definition name="interface.sleep.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/sleep_list.jsp"/>
+    </definition>
+   
+    <definition name="interface.place.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/place_list.jsp"/>
+    </definition>
+    <definition name="interface.firepic.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/firePic_list.jsp"/>
+    </definition>
+	<definition name="interface.advert.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/advert_list.jsp"/>
+    </definition>
+	<definition name="interface.passmusic.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/passMusic_list.jsp"/>
+    </definition>
+	<definition name="interface.introduce.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/introduce_list.jsp"/>
+    </definition>
+	<definition name="interface.mainstar.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/mainstar_list.jsp"/>
+    </definition>
+	<definition name="interface.rank.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/music_rank.jsp"/>
+    </definition>
+	<definition name="interface.title.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/dynamicTitle_list.jsp"/>
+    </definition>
+    <definition name="interface.video.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/advert_video_list.jsp"/>
+    </definition>
+    
+    <definition name="interface.video.list1" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/advert_video_list1.jsp"/>
+    </definition>
+    <definition name="interface.newstar.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/newstar_list.jsp"/>
+    </definition>
+    <definition name="interface.type.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/research_type_list.jsp"/>
+    </definition>
+    <definition name="interface.advice.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/advice_research_list.jsp"/>
+    </definition>
+    <definition name="interface.game.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/game_list.jsp"/>
+    </definition>
+    <definition name="interface.movieInfo.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/movie_list.jsp"/>
+    </definition>
+    <definition name="interface.channel.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/video_cast_list.jsp"/>
+    </definition>
+      <definition name="interface.activity.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/activity_list.jsp"/>
+    </definition>
+      <definition name="interface.juke.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/juke_list.jsp"/>
+    </definition>
+    <definition name="interface.newRank.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/new_music_rank.jsp"/>
+    </definition>
+    <definition name="interface.vodRank.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/interface/vod_music_rank.jsp"/>
+    </definition>
+   
+</tiles-definitions>
+	

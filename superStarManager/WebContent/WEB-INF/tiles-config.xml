@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions >
+	<definition name="config.user.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/config/user_list.jsp"/>
+    </definition>
+    <definition name="config.operation.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/config/operation_list.jsp"/>
+    </definition>
+    <definition name="config.syslog.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/config/sysLog_list.jsp"/>
+    </definition>
+    <definition name="config.dict.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/config/dict_list.jsp"/>
+    </definition>
+    <definition name="config.member.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/config/member_list.jsp"/>
+    </definition>
+    <definition name="config.param.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/config/sys_param_list.jsp"/>
+    </definition>
+    
+    <definition name="config.storeinfo.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/config/StoreInfo_list.jsp"/>
+    </definition>
+    
+</tiles-definitions>

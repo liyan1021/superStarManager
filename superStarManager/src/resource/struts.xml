@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "struts-2.0.dtd"
+        >
+<struts>
+	<constant name="struts.multipart.maxSize" value="521788000" /> <!-- 设置100M -->
+	<package name="superstar.base" extends="tiles-default">
+    
+		<!-- 定义一个拦截器stack -->
+        <interceptors>
+        
+			<interceptor name="json" class="org.apache.struts2.json.JSONInterceptor"/>
+            <interceptor name="security" class="com.liyan.superstar.interceptor.SecurityInterceptor"/>
+			<interceptor name="author" class="com.liyan.superstar.interceptor.AuthorizationInterceptor"></interceptor>
+            <interceptor-stack name="bigSingerStack">
+                <interceptor-ref name="defaultStack"/>
+                <interceptor-ref name="security"/>
+                <interceptor-ref name="author" />
+                <interceptor-ref name="fileUpload"> 
+					<param name="maximumSize">100000000</param> 
+				</interceptor-ref> 
+            </interceptor-stack>
+        </interceptors>
+        <default-interceptor-ref name="bigSingerStack"/>
+		<!--全局跳转-->
+		<global-results>
+
+            <result type="redirectAction" name="login">
+                <param name="namespace">/</param>
+                <param name="actionName">login</param>
+            </result>
+            <result type="tiles" name="error">common.error</result>
+        </global-results>
+        <action name="getDictList" class="com.liyan.superstar.action.DictionaryAction" method="getDictList"></action>
+         <action name="getDictListS" class="com.liyan.superstar.action.DictionaryAction" method="getDictListS"></action>	
+    </package>
+    
+    <package name="superstar.security" extends="tiles-default">
+    	<interceptors>
+    		  <interceptor name="security" class="com.liyan.superstar.interceptor.SecurityInterceptor"/>
+    	</interceptors>
+    	<action name="login" class="com.liyan.superstar.action.UserAction" method="login">
+            <result name="success">/login.jsp</result>
+        </action>
+		<action name="userLogin" class="com.liyan.superstar.action.UserAction" method="userLogin">
+		</action>
+		<!--退出  -->
+    	<action name="logout" class="com.liyan.superstar.action.UserAction" method="logout">
+    		<result type="redirectAction">
+                <param name="namespace">/</param>
+                <param name="actionName">login</param>
+            </result>
+    	</action>
+    	<action name="index" class="com.liyan.superstar.action.UserAction" method="index">
+    	 	<interceptor-ref name="defaultStack"/>
+    		<interceptor-ref name ="security"/>
+    		<result type="tiles">common.index</result>
+    	</action>
+    	<action name="editUser" class="com.liyan.superstar.action.UserAction" method="editUser" >
+		</action>
+		<action name="updatePwd" class="com.liyan.superstar.action.UserAction" method="updatePwd" >
+		</action>
+		<action name="checkUserPwd" class="com.liyan.superstar.action.UserAction" method="checkUserPwd" >
+		</action>
+    </package>
+ 
+    <include file="struts-config.xml"/>
+    <include file="struts-library.xml"/>
+    <include file="struts-interface.xml"/>
+    <include file="struts-tools.xml"/>
+</struts>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "struts-2.0.dtd">
+<struts>
+
+    <package name="superstar.tools" namespace="/tools" extends="superstar.base">
+		<!--APK版本管理 -->
+		<action name="goApkList" class="apkInfoAction" method="init" >
+			<result type="tiles">tools.apk.list</result>
+		</action> 
+		<action name="saveApkInfo" class="apkInfoAction" method="saveApkInfo">
+		</action>
+		<action name="removeApkInfo" class="apkInfoAction" method="removeApkInfo"></action>
+		<action name="searchApkInfo" class="apkInfoAction" method="searchApkInfo"></action>
+		<action name="apkInfoList" class="apkInfoAction" method="apkInfoList"></action>
+		<action name="checkApkVersionSort" class="apkInfoAction" method="checkApkVersionSort"></action>
+		<action name="pushApkReady" class="apkInfoAction" method="pushApkReady"></action>
+		<action name="pushApk" class="apkInfoAction" method="pushApk"></action>
+		<action name="getRoomNum" class="apkInfoAction" method="roomList"></action>		
+		<!--SQLite版本管理 -->
+		<action name="goSqliteList" class="sqliteInfoAction" method="init" >
+			<result type="tiles">tools.sqlite.list</result>
+		</action> 
+		<action name="saveSqliteInfo" class="sqliteInfoAction" method="saveSqliteInfo">
+		</action>
+		<action name="removeSqliteInfo" class="sqliteInfoAction" method="removeSqliteInfo"></action>
+		<action name="searchSqliteInfo" class="sqliteInfoAction" method="searchSqliteInfo"></action>
+		<action name="sqliteInfoList" class="sqliteInfoAction" method="sqliteInfoList"></action>
+		<action name="generateSqlite" class="sqliteInfoAction" method="generateSqlite"></action>
+		<action name="pushSqlite" class="sqliteInfoAction" method="pushSqlite"></action>
+		<action name="pushSqliteReady" class="sqliteInfoAction" method="pushSqliteReady"></action>
+		<action name="getRoomNum1" class="sqliteInfoAction" method="roomList"></action>		
+		<!-- 设备监控 -->
+		<action name="goDeviceMonitor" class="deviceMonitorAction" method="init" >
+			<result type="tiles">tools.monitor.list</result>
+		</action> 
+		<action name="deviceMonitorList" class="deviceMonitorAction" method="deviceMonitorList"></action>
+		<action name="searchDeviceMonitor" class="deviceMonitorAction" method="searchDeviceMonitor"></action>
+		<action name="openRoomList" class="deviceMonitorAction" method="openRoomList"></action>
+		<action name="setRoomState" class="deviceMonitorAction" method="setRoomState"></action>
+		
+		
+    </package>	
+</struts>
+
+

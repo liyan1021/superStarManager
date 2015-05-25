@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "struts-2.0.dtd">
+<struts>
+
+    <package name="superstar.config" namespace="/config" extends="superstar.base">
+		<action name="goUserList" class="com.liyan.superstar.action.UserAction" method="goUserList" >
+			<result type="tiles">config.user.list</result>
+		</action> 
+		<action name="userList" class="com.liyan.superstar.action.UserAction" method="userList" >
+		</action>
+		<action name="saveUser" class="com.liyan.superstar.action.UserAction" method="saveUser" >
+		</action> 
+		<action name="loadUser" class="com.liyan.superstar.action.UserAction" method="loadUser" >
+		</action>  
+		<action name="editUser" class="com.liyan.superstar.action.UserAction" method="editUser" >
+		</action>
+		<action name="removeUser" class="com.liyan.superstar.action.UserAction" method="removeUser" >
+		</action> 
+		<action name="searchUserList" class="com.liyan.superstar.action.UserAction" method="searchUserList" >
+		</action> 
+		<action name="checkUserCode" class="com.liyan.superstar.action.UserAction" method="checkUserCode" >
+		</action> 
+		
+		<!--门店管理 -->
+		<action name="goStoreInfoList" class="com.liyan.superstar.action.StoreInfoAction" method="goStoreInfoList" >
+			<result type="tiles">config.storeinfo.list</result>
+		</action> 
+		<action name="StoreInfoList" class="com.liyan.superstar.action.StoreInfoAction" method="StoreInfoList" >
+		</action> 
+		<action name="saveStoreInfo" class="com.liyan.superstar.action.StoreInfoAction" method="saveStoreInfo" >
+		</action> 
+		<action name="removeStoreInfo" class="com.liyan.superstar.action.StoreInfoAction" method="removeStoreInfo" >
+		</action> 
+		<action name="editStoreInfo" class="com.liyan.superstar.action.StoreInfoAction" method="editStoreInfo" >
+		</action> 
+		<action name="getStoreInfoList" class="com.liyan.superstar.action.StoreInfoAction" method="getStoreInfoList" >
+		</action> 
+		<action name="checkStoreInfoCode" class="com.liyan.superstar.action.StoreInfoAction" method="checkStoreInfoCode" >
+		</action> 
+		<action name="searchStoreInfoList" class="com.liyan.superstar.action.StoreInfoAction" method="searchStoreInfoList">
+		</action> 
+		<!-- 操作日志 -->
+		<action name="goOperationList" class="com.liyan.superstar.action.OperationAction" method="init" >
+			<result type="tiles">config.operation.list</result>
+		</action>
+		<!-- 分页显示 -->  
+		<action name="operationList" class="com.liyan.superstar.action.OperationAction" method="operationList"></action>
+		<!-- 查询 -->
+		<action name="searchOptLogList" class="com.liyan.superstar.action.OperationAction" method="searchOptLogList"></action>
+		<!-- 导出 -->
+		<action name="exportOptLog" class="com.liyan.superstar.action.OperationAction" method="exportLog">
+		</action>
+		
+		<!-- 系统日志 -->
+		<action name="goSysLogList" class="com.liyan.superstar.action.SysLogAction" method="init" >
+			<result type="tiles">config.syslog.list</result>
+		</action>
+		<action name="sysLogList" class="com.liyan.superstar.action.SysLogAction" method="sysLogList" ></action>  
+		<action name="exportSysLog" class="com.liyan.superstar.action.SysLogAction" method="exportLog">
+		</action>
+		<!-- 字典管理 -->
+		<action name="goDictList" class="com.liyan.superstar.action.DictionaryAction" method="init">
+			<result type="tiles">config.dict.list</result>
+		</action>
+		<action name="dictList" class="com.liyan.superstar.action.DictionaryAction" method="dictList">
+		</action>
+		<action name="saveDict" class="com.liyan.superstar.action.DictionaryAction" method="saveDict">
+		</action>
+		<action name="removeDict" class="com.liyan.superstar.action.DictionaryAction" method="removeDict">
+		</action>
+		<action name="searchDictList" class="com.liyan.superstar.action.DictionaryAction" method="searchDictList">
+		</action>
+		<action name="editDict" class="com.liyan.superstar.action.DictionaryAction" method="editDict">
+		</action>
+		<action name="checkDictSort" class="com.liyan.superstar.action.DictionaryAction" method="checkDictSort">
+		</action>
+		<action name="checkDictValue" class="com.liyan.superstar.action.DictionaryAction" method="checkDictValue">
+		</action>
+		<action name="goMemberList" class="membersAction" method="init">
+			<result type="tiles">config.member.list</result>
+		</action>
+		<action name="memberList" class="membersAction" method="memberList">
+		</action>
+		<action name="searchMember" class="membersAction" method="searchMember">
+		</action>
+		<action name="removeMembers" class="membersAction" method="removeMembers">
+		</action>
+		<action name="saveMembers" class="membersAction" method="saveMembers">
+		</action>
+		<action name="editMembers" class="membersAction" method="editMembers">
+		</action>
+		<!-- 系统参数 -->
+		<action name="goSysParam" class="systemParamAction" method="init">
+			<result type="tiles">config.param.list</result>
+		</action>
+		<action name="sysParamList" class="systemParamAction" method="sysParamList">
+		</action>
+		<action name="saveSysParam" class="systemParamAction" method="saveSysParam">
+		</action>
+		<action name="removeSysParam" class="systemParamAction" method="removeSysParam">
+		</action>
+		<action name="searchSysParam" class="systemParamAction" method="searchSysParam">
+		</action>
+		<action name="editSysParam" class="systemParamAction" method="editSysParam">
+		</action>
+    </package>	
+</struts>
+
+

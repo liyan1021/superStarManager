@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+    <definition name="common.header" template="/WEB-INF/pages/common/header.jsp"/>
+    <definition name="common.footer" template="/WEB-INF/pages/common/footer.jsp"/>
+    <definition name="common.sidebar" template="/WEB-INF/pages/common/sidebar.jsp"/>
+    <definition name="common.content" template="/WEB-INF/pages/common/body.jsp"/>
+
+    <definition name="base.classic" template="/WEB-INF/pages/layouts/classic.jsp" >
+        <put-attribute name="title" value="门店管理系统"/>
+        <put-attribute name="header" value="common.header"/>
+        <put-attribute name="sidebar" value="common.sidebar"/>
+        <put-attribute name="footer" value="common.footer"/>
+        <put-attribute name="content" value="common.content"/>
+    </definition>
+    <definition name="common.error" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/login/error.jsp"/>
+    </definition>
+    <definition name="common.index" extends="base.classic">
+		<put-attribute name="content" value="/index.jsp"/>
+    </definition>
+</tiles-definitions> 

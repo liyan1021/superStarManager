@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "struts-2.0.dtd">
+<struts>
+
+    <package name="superstar.interface" namespace="/interface" extends="superstar.base">
+		
+		<!-- 初始界面设置 -->
+		<action name="goStartList" class="interfaceAction" method="init" >
+			<result type="tiles">interface.start.list</result>
+		</action> 
+		<action name="interfaceList" class="interfaceAction" method="interfaceList" >
+		</action> 
+		<action name="searchInterface" class="interfaceAction" method="searchInterface" >
+		</action> 
+		<action name="removeInterface" class="interfaceAction" method="removeInterface" >
+		</action> 
+		<action name="editInterface" class="interfaceAction" method="editInterface" >
+		</action> 
+		<action name="saveInterface" class="interfaceAction" method="saveInterface" >
+		</action> 
+		<action name="pushStartInterface" class="interfaceAction" method="pushStartInterface" >
+		</action> 
+		<action name="checkInterfaceSort" class="interfaceAction" method="checkInterfaceSort" >
+		</action> 
+		<!-- 屏保界面设置 -->
+		<action name="goSleepList" class="interfaceAction" method="sleepInit" >
+			<result type="tiles">interface.sleep.list</result>
+		</action> 
+		<action name="sleepInterfaceList" class="interfaceAction" method="sleepInterfaceList" >
+		</action> 
+		<action name="searchSleepInterface" class="interfaceAction" method="searchSleepInterface" >
+		</action> 
+		<action name="removeSleepInterface" class="interfaceAction" method="removeSleepInterface" >
+		</action> 
+		<action name="editSleepInterface" class="interfaceAction" method="editSleepInterface" >
+		</action> 
+		<action name="saveSleepInterface" class="interfaceAction" method="saveSleepInterface" >
+		</action>
+		<action name="pushSleepInterface" class="interfaceAction" method="pushSleepInterface" >
+		</action>
+		<action name="saveSleepInterfaceList" class="interfaceAction" method="saveSleepInterfaceList" >
+		</action>
+		
+		<!-- 场所介绍界面设置 -->
+		<action name="goPlaceList" class="interfacePlaceAction" method="placeInit">
+		    <result type="tiles">interface.place.list</result>
+		</action>
+		<action name="pushPlaceInterface" class="interfacePlaceAction" method="pushPlaceInterface">
+		</action>
+		<action name="placeInterfaceList" class="interfacePlaceAction" method="placeInterfaceList">
+		</action>
+			<action name="savePlaceInterface" class="interfacePlaceAction" method="savePlaceInterface">
+		</action>
+		<action name="editPlaceInterface" class="interfacePlaceAction" method="editPlaceInterface">
+		</action>
+		<!-- 消防图解界面设置 -->
+			<action name="goFirePicList" class="interfacePlaceAction" method="firePicInit">
+		    <result type="tiles">interface.firepic.list</result>
+		</action>
+		<action name="pushFirePicInterface" class="interfacePlaceAction" method="pushFirePicInterface">
+		</action>
+		<action name="firePicInterfaceList" class="interfacePlaceAction" method="firePicInterfaceList">
+		</action>
+			<action name="saveFirePicInterface" class="interfacePlaceAction" method="saveFirePicInterface">
+		</action>
+		<action name="editFirePicInterface" class="interfacePlaceAction" method="editFirePicInterface">
+		</action>
+		
+		<!--广告发布 -->
+		<action name='goAdvert' class="advertAction" method="init">
+			<result type="tiles">interface.advert.list</result>
+		</action>
+		<action name="advertList" class="advertAction" method="advertList"></action>
+		<action name="searchAdvert" class="advertAction" method="searchAdvert"></action>
+		<action name="saveAdvert" class="advertAction" method="saveAdvert"></action>
+		<action name="editAdvert" class="advertAction" method="editAdvert"></action>
+		<action name="removeAdvert" class="advertAction" method="removeAdvert"></action>
+		<action name="pushAdvert" class="advertAction" method="pushAdvert"></action>
+		<action name="advertSongList" class="advertAction" method="advertSongList"></action>
+		<action name="saveAdvertMusic" class="advertAction" method="saveAdvertMusic"></action>
+		<action name="removeAdvertMusic" class="advertAction" method="removeAdvertMusic"></action>
+		<action name="checkAdvertSort" class="advertAction" method="checkAdvertSort"></action>
+		
+		<!-- 过路歌曲设置 -->
+		<action name="goPassMusic" class="passMusicAction" method="init">
+			<result type="tiles">interface.passmusic.list</result>
+		</action>
+		<action name="passMusicList" class="passMusicAction" method="passMusicList"></action>
+		<action name="savePassMusic" class="passMusicAction" method="savePassMusic"></action>
+		<action name="editPassMusic" class="passMusicAction" method="editPassMusic"></action>
+		<action name="removePassMusic" class="passMusicAction" method="removePassMusic"></action>
+		<action name="searchPassMusic" class="passMusicAction" method="searchPassMusic"></action>
+		<action name="pushPassMusic" class="passMusicAction" method="pushPassMusic"></action>
+		<action name="checkPassSongSort" class="passMusicAction" method="checkPassSongSort"></action>
+		<!-- 获取歌曲列表 -->
+		<action name="musicList" class="passMusicAction" method="musicList"></action>
+		<!-- 获取非过路歌曲列表 -->
+		<action name="unPassMusicList" class="passMusicAction" method="unPassMusicList"></action>
+		<!-- 新歌推荐 -->
+		<action name="goIntroduce" class="introduceAction" method="init">
+			<result type="tiles">interface.introduce.list</result>
+		</action>
+		<action name="introduceList" class="introduceAction" method="introduceList"></action>
+		<action name="saveIntroduce" class="introduceAction" method="saveIntroduce"></action>
+		<action name="editIntroduce" class="introduceAction" method="editIntroduce"></action>
+		<action name="removeIntroduce" class="introduceAction" method="removeIntroduce"></action>
+		<action name="searchIntroduce" class="introduceAction" method="searchIntroduce"></action>
+		<action name="pushIntroduce" class="introduceAction" method="pushIntroduce"></action>
+		<action name="introMusicList" class="introduceAction" method="musicList"></action>
+		<!-- 主打歌星 -->
+		<action name="goMainStar" class="mainStarAction" method="init">
+			<result type="tiles">interface.mainstar.list</result>
+		</action>
+		<action name="mainStarList" class="mainStarAction" method="mainStarList"></action>
+		<action name="unMainStarList" class="mainStarAction" method="unMainStarList"></action>
+		<action name="setMainStar" class="mainStarAction" method="setMainStar"></action>
+		<action name="removeMainStar" class="mainStarAction" method="removeMainStar"></action>
+		<action name="searchMainStarList" class="mainStarAction" method="searchMainStarList"></action>
+		<action name="pushMainStar" class="mainStarAction" method="pushMainStar"></action>
+		<action name="singerList" class="mainStarAction" method="singerList"></action>
+		<action name="checkMainStarSort" class="mainStarAction" method="checkMainStarSort"></action>
+		<!-- 点唱排行 -->
+		<action name="goMusicRank" class="musicRankingAction" method="init">
+			<result type="tiles">interface.rank.list</result>
+		</action>
+		<action name="musicRankingList" class="musicRankingAction" method="musicRankingList"></action>
+		<action name="editMusicRank" class="musicRankingAction" method="editMusicRank"></action>
+		<action name="searchMusicRank" class="musicRankingAction" method="searchMusicRank"></action>
+		<!-- 新歌排行 -->
+		<action name="goNewMusicRank" class="newMusicRankingAction" method="init">
+			<result type="tiles">interface.newRank.list</result>
+		</action>
+		<action name="newMusicRankingList" class="newMusicRankingAction" method="musicRankingList"></action>
+		<action name="editNewMusicRank" class="newMusicRankingAction" method="editMusicRank"></action>
+		<action name="searchNewMusicRank" class="newMusicRankingAction" method="searchMusicRank"></action>
+		<!-- 大歌星排行 -->
+		<action name="goVodMusicRank" class="vodMusicRankingAction" method="init">
+			<result type="tiles">interface.vodRank.list</result>
+		</action>
+		<action name="vodMusicRankingList" class="vodMusicRankingAction" method="musicRankingList"></action>
+		<action name="editVodMusicRank" class="vodMusicRankingAction" method="editMusicRank"></action>
+		<action name="searchVodMusicRank" class="vodMusicRankingAction" method="searchMusicRank"></action>
+		<action name="importRank" class="vodMusicRankingAction" method="importRank"></action>
+		<!-- 跑马灯字幕 -->
+		<action name="goDynamicTitle" class="dynamicTitleAction" method="init">
+			<result type="tiles">interface.title.list</result>
+		</action>
+		<action name="dynamicTitleList" class="dynamicTitleAction" method="dynamicTitleList"></action>
+		<action name="saveTitle" class="dynamicTitleAction" method="saveTitle"></action>
+		<action name="editTitle" class="dynamicTitleAction" method="editTitle"></action>
+		<action name="removeTitle" class="dynamicTitleAction" method="removeTitle"></action>
+		<action name="searchTitle" class="dynamicTitleAction" method="searchTitle"></action>
+		<action name="pushTitle" class="dynamicTitleAction" method="pushTitle"></action>
+		<action name="getRoomList" class="dynamicTitleAction" method="getRoomList"></action>
+		<!-- 宣传片 -->
+		<action name="goAdvertVideo" class="advertVideoAction" method="init">
+			<result type="tiles">interface.video.list</result>
+		</action>
+		<action name="advertVideoList" class="advertVideoAction" method="advertVideoList"></action>
+		<action name="saveVideo" class="advertVideoAction" method="saveVideo"></action>
+		<action name="editVideo" class="advertVideoAction" method="editVideo"></action>
+		<action name="removeVideo" class="advertVideoAction" method="removeVideo"></action>
+		<action name="searchVideo" class="advertVideoAction" method="searchVideo"></action>
+		<action name="pushVideo" class="advertVideoAction" method="pushVideo"></action>
+		<action name="checkAdvertVideoSort" class="advertVideoAction" method="checkAdvertVideoSort"></action>
+		
+		<!-- 宣传片更新 -->
+		<action name="goAdvertVideo1" class="advertVideoAction1" method="init">
+			<result type="tiles">interface.video.list1</result>
+		</action>
+		<action name="advertVideoList1" class="advertVideoAction1" method="advertVideoList"></action>
+		<action name="saveAdvertVideo" class="advertVideoAction1" method="saveAdvertVideo"></action>
+		<action name="editAdvertVideo" class="advertVideoAction1" method="editAdvertVideo"></action>
+		<action name="removeAdvertVideo" class="advertVideoAction1" method="removeAdvertVideo"></action>
+		<action name="searchAdvertVideo" class="advertVideoAction1" method="searchAdvertVideo"></action>
+		<action name="pushAdvertVideo" class="advertVideoAction1" method="pushAdvertVideo"></action>
+		<action name="unAdvertVideoList" class="advertVideoAction1" method="unAdvertVideoList"></action>
+		<action name="checkAdvertVideoSort1" class="advertVideoAction1" method="checkAdvertVideoSort"></action>
+		
+		
+		<!-- 新星推荐 -->
+		<action name="goNewStar" class="mainStarAction" method="newStarInit">
+			<result type="tiles">interface.newstar.list</result>
+		</action>
+		<action name="newStarList" class="mainStarAction" method="newStarList"></action>
+		<action name="unNewStarList" class="mainStarAction" method="unNewStarList"></action>
+		<action name="setNewStar" class="mainStarAction" method="setNewStar"></action>
+		<action name="removeNewStar" class="mainStarAction" method="removeNewStar"></action>
+		<action name="pushNewStar" class="mainStarAction" method="pushNewStar"></action>
+		<action name="searchNewStar" class="mainStarAction" method="searchNewStar"></action>
+		<!-- 意见调查类型 -->
+		<action name="goResearchType" class="researchTypeAction" method="init">
+			<result type="tiles">interface.type.list</result>
+		</action>
+		<action name="researchTypeList" class="researchTypeAction" method="researchTypeList"></action>
+		<action name="saveResearchType" class="researchTypeAction" method="saveResearchType"></action>
+		<action name="editResearchType" class="researchTypeAction" method="editResearchType"></action>
+		<action name="removeResearchType" class="researchTypeAction" method="removeResearchType"></action>
+		
+		<!-- 意见调查 -->
+		<action name="goAdvice" class="adviceResearchAction" method="init">
+			<result type="tiles">interface.advice.list</result>
+		</action>
+		<action name="adviceList" class="adviceResearchAction" method="adviceList"></action>
+		
+		<!-- 游戏管理 -->
+		<action name="goGame" class="gameAction" method="init">
+			<result type="tiles">interface.game.list</result>
+		</action>
+		<action name="gameList" class="gameAction" method="gameList" ></action>
+		<action name="removeGame" class="gameAction" method="removeGame" ></action>
+		<action name="importGame" class="gameAction" method="importGame" ></action>
+		<action name="searchGame" class="gameAction" method="searchGame" ></action>
+		<action name="pushGame" class="gameAction" method="pushGame" ></action>
+		<action name="saveGame" class="gameAction" method="saveGame" ></action>
+		<action name="editGame" class="gameAction" method="editGame" ></action>
+		<!-- 影视管理 -->
+		<action name="goMovieInfo" class="movieInfoAction" method="init">
+			<result type="tiles">interface.movieInfo.list</result>
+		</action>
+		<action name="movieInfoList" class="movieInfoAction" method="movieInfoList" ></action>
+		<action name="removeMovieInfo" class="movieInfoAction" method="removeMovieInfo" ></action>
+		<action name="saveMovieInfo" class="movieInfoAction" method="saveMovieInfo" ></action>
+		<action name="searchMovieInfo" class="movieInfoAction" method="searchMovieInfo" ></action>
+		<action name="editMovieInfo" class="movieInfoAction" method="editMovieInfo" ></action>
+		<action name="pushMovie" class="movieInfoAction" method="pushMovie" ></action>
+		<action name="checkMovieSort" class="movieInfoAction" method="checkMovieSort" ></action>
+		
+		<!-- 视频转播 -->
+		<action name="goChannel" class="channelAction" method="init">
+			<result type="tiles">interface.channel.list</result>
+		</action>
+		<action name="channelList" class="channelAction" method="channelList" ></action>
+		<action name="removeChannel" class="channelAction" method="removeChannel" ></action>
+		<action name="saveChannel" class="channelAction" method="saveChannel" ></action>
+		<action name="searchChannel" class="channelAction" method="searchChannel" ></action>
+		<action name="editChannel" class="channelAction" method="editChannel" ></action>
+		<action name="pushChannel" class="channelAction" method="pushChannel" ></action>
+		<action name="checkChannelSort" class="channelAction" method="checkChannelSort" ></action>
+		
+		<!-- 营销活动 -->
+		<action name="goActivity" class="marketingActivityAction" method="init">
+			<result type="tiles">interface.activity.list</result>
+		</action>
+		<action name="activityList" class="marketingActivityAction" method="activityList" ></action>
+		<action name="removeActivity" class="marketingActivityAction" method="removeActivity" ></action>
+		<action name="saveActivity" class="marketingActivityAction" method="saveActivity" ></action>
+		<action name="searchActivity" class="marketingActivityAction" method="searchActivity" ></action>
+		<action name="editActivity" class="marketingActivityAction" method="editActivity" ></action>
+		<action name="pushActivity" class="marketingActivityAction" method="pushActivity" ></action>
+		<action name="checkActivitySort" class="marketingActivityAction" method="checkActivitySort" ></action>
+		<!-- 点唱记录 -->
+		<action name="gojuke" class="jukeRankAction" method="jukeInit">
+			<result type="tiles">interface.juke.list</result>	
+		</action>
+		<action name="jukeList" class="jukeRankAction" method="jukeList" ></action>
+		<action name="searchJuke" class="jukeRankAction" method="searchJuke" ></action>
+		
+    </package>	
+</struts>
+
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions >
+	<definition name="tools.apk.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/tools/apk_list.jsp"/>
+    </definition>
+	<definition name="tools.sqlite.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/tools/sqlite_list.jsp"/>
+    </definition>
+	<definition name="tools.monitor.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/tools/device_monitor_list.jsp"/>
+    </definition>
+</tiles-definitions>
+	

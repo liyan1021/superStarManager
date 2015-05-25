@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions >
+	<definition name="library.music.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/library/music_list.jsp"/>
+    </definition>
+    <definition name="library.singer.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/library/singer_list.jsp"/>
+    </definition>
+    <definition name="library.support.list" extends="base.classic">
+		<put-attribute name="content" value="/WEB-INF/pages/tiles/library/support_list.jsp"/>
+    </definition>
+</tiles-definitions>

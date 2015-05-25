@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "struts-2.0.dtd">
+<struts>
+
+    <package name="superstar.music" namespace="/library" extends="superstar.base">
+		<!-- 曲库管理 -->
+		<action name="goMusicList" class="songAction" method="init" >
+			<result type="tiles">library.music.list</result>
+		</action> 
+		<action name="musicList" class="songAction" method="musicList" >
+		</action> 
+		<action name="searchMusicList" class="songAction" method="searchMusicList" >
+		</action> 
+		<action name="removeMusic" class="songAction" method="removeMusic" >
+		</action> 
+		<action name="editMusic" class="songAction" method="editMusic" >
+		</action> 
+		<action name="exportMusic" class="songAction" method="exportMusic" >
+		</action> 
+		<action name="importMusic" class="songAction" method="importMusic" >
+		</action> 
+		
+		<!-- 歌星管理 -->
+		<action name="goSingerList" class="singerAction" method="init" >
+			<result type="tiles">library.singer.list</result>
+		</action> 
+		<action name="singerList" class="singerAction" method="singerList" >
+		</action> 
+		<action name="searchSingerList" class="singerAction" method="searchSingerList" >
+		</action> 
+		<action name="removeSinger" class="singerAction" method="removeSinger" >
+		</action> 
+		<action name="saveSinger" class="singerAction" method="saveSinger" >
+		</action> 
+		<action name="editSinger" class="singerAction" method="editSinger" >
+		</action> 
+		<action name="getSingerPic" class="singerAction" method="getSingerPic" >
+		</action> 
+		<action name="exportSinger" class="singerAction" method="exportSinger" >
+		</action> 
+		<action name="importSinger" class="singerAction" method="importSinger" >
+		</action> 
+		<action name="checkSingerName" class="singerAction" method="checkSingerName" >
+		</action> 
+		
+		<!-- 补歌清单 -->
+		<action name="goSupportList" class="supportSongAction" method="init">
+			<result type="tiles">library.support.list</result>
+		</action>
+		<action name="supportList" class="supportSongAction" method="supportList"></action>
+		
+		<action name="removeSupport" class="supportSongAction" method="removeSupport"></action>
+		<action name="searchSupportList" class="supportSongAction" method="searchSupportList"></action>
+		<action name="updateSupport" class="supportSongAction" method="updateSupport"></action>
+		<action name="exportSupport" class="supportSongAction" method="exportSupport"></action>
+		<action name="supportSong" class="supportSongAction" method="supportSong"></action>
+    </package>	
+</struts>
+
+
